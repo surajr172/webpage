@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: coral;
+            position: relative;
+            animation: first 5s linear 2s infinite alternate;
+        }
+        
+        @keyframes first {
+            0% {
+                background-color: teal;
+                left: 0px;
+                top: 0px;
+            }
+            25% {
+                background-color: thistle;
+                left: 200px;
+                top: 0px;
+            }
+            50% {
+                background-color: wheat;
+                left: 200px;
+                top: 200px;
+            }
+            75% {
+                background-color: yellow;
+                left: 0px;
+                top: 200px;
+            }
+            100% {
+                background-color: silver;
+                left: 0px;
+                top: 0px;
+            }
+        }
+    </style>
+
+    <title>Input Tags</title>
+</head>
+
+<body style="background-color: rgb(72, 255, 0);">
+
+    <pre style="font-family: 'Times New Roman', Times, serif;">
+        User Name : <input type="text" name="User-id"/><br>
+        Password : <input type="password" name="password" placeholder="password min length : 8" maxlength="10"/><br>
+        Email id : <input type="email" id="email" name="Email" placeholder="enter the email !"/>
+
+        Gender :<select name="Gender">
+            <option value="Male" selected>Male</option>
+            <option value="Female">Female</option>
+                    </select><br>
+        Contact : <input type="tel" id="mobile" name="mobile" placeholder="ex.9854-642-312" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}"/><br>
+        <input type="radio" name="student" value="on"/>student
+        
+        Profession : <input type="radio" name="student" value="on"/>student
+                     <input type="radio" name="employee" value="on"/>employee<br>
+
+        ocuupation : <input type="checkbox" name="Engineer" value="on"/>Engineer
+                    <input type="checkbox" name="Doctor" value="on">Doctor<br>
+
+                    <input type="file" name="upload" accept="image/*"/><br>
+                    <input type="submit" name="submit" value="submit"><br>
+                    <input type="reset" name="reset" value="reset"><br>
+                    <input type="image" name="imagebutton" src="heaptrace.png" alt="new"/><br>
+                   
+    </pre>
+    <div></div>
+</body>
+
+</html>
